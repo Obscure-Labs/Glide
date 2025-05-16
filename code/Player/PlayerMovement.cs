@@ -1,5 +1,5 @@
-using System.Threading;
-using System.Threading.Tasks;
+// using System.Threading;
+// using System.Threading.Tasks;
 using Sandbox;
 
 namespace Glide.Player
@@ -38,10 +38,10 @@ namespace Glide.Player
 			if ( _isGrounded && _jumpAllowed && Input.Down( "Jump" ) )
 			{
 				_jumpAllowed = false;
-				new Thread( () =>
-				{
-					Thread.Sleep( JumpCooldown );
-				} );
+				// new Thread( () =>
+				// {
+				// 	Thread.Sleep( JumpCooldown );
+				// } );
 			}
 		}
 
